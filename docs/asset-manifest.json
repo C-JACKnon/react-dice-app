@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-dice-app/static/css/main.f9658815.css",
+    "main.js": "/react-dice-app/static/js/main.af74ed47.js",
+    "static/js/787.770d194c.chunk.js": "/react-dice-app/static/js/787.770d194c.chunk.js",
+    "index.html": "/react-dice-app/index.html",
+    "main.f9658815.css.map": "/react-dice-app/static/css/main.f9658815.css.map",
+    "main.af74ed47.js.map": "/react-dice-app/static/js/main.af74ed47.js.map",
+    "787.770d194c.chunk.js.map": "/react-dice-app/static/js/787.770d194c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9658815.css",
+    "static/js/main.af74ed47.js"
+  ]
+}
