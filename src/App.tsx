@@ -75,7 +75,7 @@ function App() {
 
   return (
     <div id="app-container">
-      <Card sx={{ minWidth: 500 }} id="app-card">
+      <Card sx={{ maxWidth: 500 }} id="app-card">
         <CardContent>
           <div id="app-components">
             <DiceMaxValueSetting diceMaxValue={diceMaxValue} changeDiceMaxValue={changeDiceMaxValue}></DiceMaxValueSetting>
@@ -89,79 +89,6 @@ function App() {
       </Card>
     </div>
   );
-
-
-  // // 登録したTODOの状態変数を生成
-  // const [todos, setTodos] = useState<TodoInfo[]>([]);
-
-  // // 入力されたTODO名の要素の参照変数を生成
-  // const todoNameRef = useRef<HTMLInputElement | null>(null);
-
-  // /**
-  //  * タスク追加ボタンクリックイベント
-  //  */
-  // const handleAddTodo = (): void => {
-  //   // タスク名の取得
-  //   const inputName = (todoNameRef.current as HTMLInputElement).value;
-    
-  //   // タスク名が入力されているか判定
-  //   if (inputName == "" || inputName == undefined || inputName == null) {
-  //     return;
-  //   }
-
-  //   // タスクの追加
-  //   setTodos((prevTodos: TodoInfo[]) => {
-  //     return [...prevTodos, new TodoInfo(uuidv4(), inputName as string)]
-  //   });
-
-  //   // 入力されているタスク名の削除
-  //   (todoNameRef.current as HTMLInputElement).value = "";
-  // }
-
-  // /**
-  //  * TODOのチェック操作
-  //  * @param {string} id - チェック操作するTODOのID
-  //  */
-  // const toggleTodo = (id: string): void => {
-  //   // Todoリストをコピー
-  //   const newTodos = [...todos];
-
-  //   // 操作したTODO情報をIDで探索
-  //   const todo = newTodos.find((todo) => todo.id === id);
-
-  //   // TODOがID探索で見つからなかった場合
-  //   if (todo === undefined) {
-  //     return;
-  //   }
-
-  //   // チェックを反転させる
-  //   todo.isCompleted = !todo.isCompleted;
-
-  //   // 変更の反映
-  //   setTodos(newTodos);
-  // }
-
-  // /**
-  //  * 完了したTODOの削除
-  //  */
-  // const handleRemoveCompletedTodo = () => {
-  //   // 完了していないTodoリストのコピー
-  //   const newTodos = todos.filter((todo) => !todo.isCompleted);
-    
-  //   // 変更の反映
-  //   setTodos(newTodos);
-  // }
-
-  // return (
-  //   <>
-  //     <TodoList todos={todos} toggleTodo={toggleTodo} />
-  //     <input type="text" ref={todoNameRef} />
-  //     <button onClick={handleAddTodo}>タスクの追加</button>
-  //     <button onClick={handleRemoveCompletedTodo}>完了したタスクの削除</button>
-  //     <div>残りのタスク: {todos.filter((todo) => !todo.isCompleted).length}</div>
-  //     <Button variant="contained">Hello World</Button>
-  //   </>
-  // );
 }
 
 export default App;
